@@ -11,3 +11,7 @@
 # 1.1.0
 
 - Making Apollo Engine optional. Only if an env var ( ENGINE_API_KEY ) is specified then Apollo Engine will be enabled.
+
+# 1.2.0
+
+- Out with TravisCI ( because not free anymore ) and in with CircleCI
