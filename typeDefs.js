@@ -1,4 +1,4 @@
-const schemaDef =
+const typeDefs =
 `
 type Query{
     countries(input: CountryInput): [Country]
@@ -10,9 +10,14 @@ type Country{
     demonym: String
     flag: String
     capital: String
+    alpha2Code: String
+    alpha3Code: String
+    callingCodes: [String]
+    cioc: String
+    numericCode: String
     population: Int
-    latitude: Int
-    longitude: Int
+    latitude: Float
+    longitude: Float
     translations: Translations
     topLevelDomain:[String]
     altSpellings: [String]
@@ -25,14 +30,6 @@ type Country{
     currencies: [Currency]
     languages: [Language]
     regionalBlocs: [RegionalBlock]
-}
-
-type Codes{
-    alpha2Code: String
-    alpha3Code: String
-    callingCodes: [String!]
-    cioc: String
-    numericCode: String
 }
 
 type RegionalBlock{
@@ -77,4 +74,5 @@ input CountryInput{
     region: String
     regionalBlock: String
 }`;
-export default schemaDef;
+
+export default typeDefs;
