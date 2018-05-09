@@ -7,3 +7,7 @@
 - Adding Travis
 - Changing name to world-countries-graphql-api
 - Changing regionalBlocks to enum type
+
+# 1.1.0
+
+- Making Apollo Engine optional. Only if an env var ( ENGINE_API_KEY ) is specified then Apollo Engine will be enabled.

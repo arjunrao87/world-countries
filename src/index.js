@@ -20,13 +20,16 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({
 }));
 app.get('/playground', playground({ endpoint: '/graphql' }));
 
-// Instantiate Apollo Engine
-const engine = new ApolloEngine({
-  apiKey: process.env.ENGINE_API_KEY,
-});
-
-// Run the server!
-engine.listen({
-  port: process.env.PORT || 3000,
-  expressApp: app,
-});
+if (process.env.ENGINE_API_KEY) {
+  // Instantiate Apollo Engine
+  const engine = new ApolloEngine({
+    apiKey: process.env.ENGINE_API_KEY,
+  });
+  // Run the server!
+  engine.listen({
+    port: process.env.PORT || 3000,
+    expressApp: app,
+  });
+} else {
+  app.listen({ port: process.env.PORT || 3000 });
+}
