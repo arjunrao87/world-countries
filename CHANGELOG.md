@@ -6,3 +6,4 @@
 - Placeholder for tests. No tests yet.
 - Adding Travis
 - Changing name to world-countries-graphql-api
+- Changing regionalBlocks to enum type
