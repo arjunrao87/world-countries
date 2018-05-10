@@ -1,0 +1,20 @@
+# Deployment
+
+## Build time
+
+### Build docker image
+```
+docker build -t arjunrao87/world-countries-graphql-api .
+```
+
+### Push docker image
+```
+
+```
+
+## Deploy time
+
+### Bring up services using Docker Compose
+```
+docker-compose up --scale countries=3
+```

@@ -1,0 +1,19 @@
+countries:
+  image: arjunrao87/world-countries-graphql-api:latest
+  volumes:
+    - .:/app
+  ports:
+    - "3001-3003:3000"
+  restart: always
+
+nginx:
+  image: nginx
+  links:
+    - countries
+  volumes_from:
+    - countries
+  volumes:
+    - ./nginx.conf:/etc/nginx/conf.d/countries.conf:ro
+  ports:
+    - "80:80"
+  restart: always

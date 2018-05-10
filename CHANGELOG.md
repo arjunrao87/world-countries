@@ -15,3 +15,10 @@
 # 1.2.0
 
 - Out with TravisCI ( because not free anymore ) and in with CircleCI
+
+# 1.3.0
+
+- Adding docker capabilities
+    - Dockerfile for node
+    - Docker compose for node, nginx
+    - nginx conf ( but nginx no workies yet 😭🤒)
