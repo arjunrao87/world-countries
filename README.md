@@ -1,4 +1,4 @@
-# World Countries [![CircleCI](https://circleci.com/gh/arjunrao87/world-countries-graphql-api.svg?style=svg)](https://circleci.com/gh/arjunrao87/world-countries-graphql-api)
+# World Countries [![CircleCI](https://circleci.com/gh/arjunrao87/world-countries-graphql-api.svg?style=svg)](https://circleci.com/gh/arjunrao87/world-countries-graphql-api)   [![dependencies Status](https://david-dm.org/arjunrao87/world-countries-graphql-api/status.svg)](https://david-dm.org/arjunrao87/world-countries-graphql-api)
 
 Get information about countries using a GraphQL API
 

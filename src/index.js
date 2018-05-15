@@ -27,9 +27,9 @@ if (process.env.ENGINE_API_KEY) {
   });
   // Run the server!
   engine.listen({
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 5000,
     expressApp: app,
   });
 } else {
-  app.listen({ port: process.env.PORT || 3000 });
+  app.listen({ port: process.env.PORT || 5000 });
 }

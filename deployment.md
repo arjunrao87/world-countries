@@ -23,3 +23,8 @@ docker push arjunrao87/world-countries-graphql-api:1.3.0
 ```
 docker-compose up --scale countries=3
 ```
+
+### Bring down services using Docker Compose
+```
+docker-compose down
+```
