@@ -22,3 +22,9 @@
     - Dockerfile for node
     - Docker compose for node, nginx
     - nginx conf ( but nginx no workies yet 😭🤒)
+
+# 1.4.0
+
+- Changing port to 5000
+- Adding vscode debug capabilities 💯
+-
