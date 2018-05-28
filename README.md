@@ -5,3 +5,120 @@ Get information about countries using a GraphQL API
 Simple GraphQL wrapper around [REST Countries](https://restcountries.eu) which acts as the source of data
 
 Schema is available at [World Countries Schema](typeDefs.js)
+
+- Sample query
+```
+
+# Try to write your query here
+
+# Try to write your query here
+
+{
+
+  countries(input:{
+
+    regionalBlock: EU
+
+  }){
+
+    name
+
+    nativeName
+
+                  demonym
+
+    flag
+
+    capital
+
+    population
+
+    latitude
+
+    longitude
+
+    translations{
+
+      de
+
+      es
+
+      fr
+
+      ja
+
+      it
+
+      br
+
+      pt
+
+    }
+
+    languages{
+
+      iso639_1
+
+      iso639_2
+
+      name
+
+      nativeName
+
+    }
+
+    timezones
+
+    currencies{
+
+      code
+
+      name
+
+      symbol
+
+    }
+
+    topLevelDomain
+
+    altSpellings
+
+    region
+
+    subregion
+
+    area
+
+    gini
+
+    timezones
+
+    borders
+
+      alpha2Code
+
+      alpha3Code
+
+      callingCodes
+
+      cioc
+
+      numericCode
+
+    regionalBlocs{
+
+      acronym
+
+      name
+
+      otherAcronyms
+
+      otherNames
+
+    }
+
+  }
+
+}
+
+```
