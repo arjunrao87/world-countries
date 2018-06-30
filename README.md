@@ -25,7 +25,7 @@ Schema is available at [World Countries Schema](typeDefs.js)
 
     nativeName
 
-                  demonym
+    demonym
 
     flag
 
