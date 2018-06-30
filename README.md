@@ -1,5 +1,8 @@
 # World Countries [![CircleCI](https://circleci.com/gh/arjunrao87/world-countries-graphql-api.svg?style=svg)](https://circleci.com/gh/arjunrao87/world-countries-graphql-api)   [![dependencies Status](https://david-dm.org/arjunrao87/world-countries-graphql-api/status.svg)](https://david-dm.org/arjunrao87/world-countries-graphql-api)
 
+## Make GraphQL requests to http://104.236.66.151:5000/graphql
+## Use Playground at http://104.236.66.151:5000/playground
+
 Get information about countries using a GraphQL API
 
 Simple GraphQL wrapper around [REST Countries](https://restcountries.eu) which acts as the source of data
