@@ -6,6 +6,8 @@ import { graphqlExpress } from 'apollo-server-express';
 import playground from 'graphql-playground-middleware-express';
 import schema from './schema';
 
+const port = process.env.PORT || 5000;
+
 require('dotenv').config();
 
 // ////////////////////////// SERVER EXECUTION /////////////////////////
@@ -27,9 +29,11 @@ if (process.env.ENGINE_API_KEY) {
   });
   // Run the server!
   engine.listen({
-    port: process.env.PORT || 5000,
+    port,
     expressApp: app,
   });
 } else {
-  app.listen({ port: process.env.PORT || 5000 });
+  app.listen({ port });
 }
+
+console.log( `Listening on port ${port}`);
