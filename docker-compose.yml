@@ -1,5 +1,5 @@
 countries:
-  image: arjunrao87/world-countries-graphql-api:latest
+  image: arjunrao87/world-countries-graphql-api:1.5.0
   volumes:
     - .:/app
   ports:
